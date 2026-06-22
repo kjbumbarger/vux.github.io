@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1 id="text"></h1>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const text = params.get("text");
+
+    document.getElementById("text").textContent =
+      text || "No text provided";
+  </script>
+</body>
+</html>
